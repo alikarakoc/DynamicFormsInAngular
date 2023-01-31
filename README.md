@@ -1,27 +1,99 @@
-# DynamicFormsInAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
+# Dynamic Forms in Angular
 
-## Development server
+## Data.json
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+| Default Values Key             | Set Values                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| country | TR |
+| firstName | Ali |
+| lastName | Karakoç |
+| email |  mail@alikarakoc.com |
+| developer | true |
 
-## Code scaffolding
+## Meta.json
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+A data template that holds which fields will be contained in the form.
 
-## Build
+`controlType`, `'label,textinput,checkbox,dropdown'`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`order`, `'control order number'`
 
-## Running unit tests
+ 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Usage/Examples -> DropDown
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```json
+[
+  {
+    "controlType": "label",
+    "order": 1,
+    "text": "Ülkesi:"
+  },
+  {
+    "key": "country",
+    "options": [
+      {
+        "key": "TR",
+        "value": "Türkiye"
+      },
+      {
+        "key": "EN",
+        "value": "İngiltere"
+      },
+      {
+        "key": "RU",
+        "value": "Rusya"
+      }
+    ],
+    "order": 2,
+    "controlType": "dropdown"
+  }
+]
+```
 
-## Further help
+## Usage/Examples -> TexInput
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```json
+[
+  {
+    "controlType": "label",
+    "order": 1,
+    "text": "Adı:"
+  },
+  {
+    "controlType": "textinput",
+    "key": "firstName",
+    "required": true,
+    "order": 2
+  }
+]
+```
+
+
+## Usage/Examples -> Checkbox
+
+```json
+[
+  {
+    "controlType": "checkbox",
+    "key": "developer",
+    "label": "Yazılımcı mı?",
+    "order":1
+  }
+]
+```
+
+## Usage/Examples -> Label
+
+```json
+[
+  {
+    "controlType": "label",
+    "text": "Adı:",
+    "order":1
+  }
+]
+```
+

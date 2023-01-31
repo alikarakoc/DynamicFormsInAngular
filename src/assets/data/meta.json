@@ -1,0 +1,65 @@
+[
+    {
+        "controlType": "label",
+        "order": 1,
+        "text": "Ülkesi:"
+    },
+    {
+        "key": "country",
+        "options": [
+            {
+                "key": "TR",
+                "value": "Türkiye"
+            },
+            {
+                "key": "EN",
+                "value": "İngiltere"
+            },
+            {
+                "key": "RU",
+                "value": "Rusya"
+            }
+        ],
+        "order": 2,
+        "controlType": "dropdown"
+    },
+    {
+        "controlType": "label",
+        "order": 3,
+        "text": "Adı:"
+    },
+    {
+        "controlType": "textinput",
+        "key": "firstName",
+        "required": true,
+        "order": 4
+    },
+    {
+        "controlType": "label",
+        "order": 5,
+        "text": "Soyadı:"
+    },
+    {
+        "controlType": "textinput",
+        "key": "lastName",
+        "required": true,
+        "order": 6
+    },
+    {
+        "controlType": "label",
+        "order": 7,
+        "text": "Mail adresi:"
+    },
+    {
+        "controlType": "textinput",
+        "key": "email",
+        "label": "Email",
+        "order": 8
+    },
+    {
+        "controlType": "checkbox",
+        "key": "developer",
+        "label": "Yazılımcı mı?",
+        "order": 9
+    }
+]
