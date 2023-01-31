@@ -1,6 +1,10 @@
 
 # Dynamic Forms in Angular
 
+
+![Examples](https://user-images.githubusercontent.com/16520480/215794091-047d699f-8092-40bf-91bc-c2073a63d151.png)
+
+
 ## Data.json
 
 | Default Values Key             | Set Values                                                                |
