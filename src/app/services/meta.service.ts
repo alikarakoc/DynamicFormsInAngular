@@ -13,7 +13,7 @@ export class MetaService {
   async getMeta(): Promise<ControlBase[]> {
     return lastValueFrom(
       this.http
-        .get('../assets/data/meta.json')
+        .get('https://gist.githubusercontent.com/alikarakoc/64db03aecb7ac6fa0817f011cce27661/raw/c699d6180a6ce0a853db883f4d7f6390cbd4093f/meta.json')
         .pipe(
           map((meta: any) => meta.sort((a: any, b: any) => a.order - b.order))
         )
