@@ -2,7 +2,7 @@
     {
         "controlType": "label",
         "order": 1,
-        "text": "Ülkesi:"
+        "text": "Ülkem:"
     },
     {
         "key": "country",
