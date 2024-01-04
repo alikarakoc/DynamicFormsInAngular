@@ -2,7 +2,7 @@
 # Dynamic Forms in Angular
 
 
-![Examples](https://user-images.githubusercontent.com/16520480/215794091-047d699f-8092-40bf-91bc-c2073a63d151.png)
+![Examples](https://github.com/alikarakoc/DynamicFormsInAngular/assets/16520480/7a25589d-dc11-45e4-8448-3f057fbbfafd)
 
 
 ## Data.json
