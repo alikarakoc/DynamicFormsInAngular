@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/DynamicFormsInAngular/",
             "outputPath": "dist/dynamic-forms-in-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -100,6 +101,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

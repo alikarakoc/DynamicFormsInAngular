@@ -9,6 +9,7 @@ import { DropdownComponent } from './components/controls/dropdown/dropdown.compo
 import { LabelComponent } from './components/controls/label/label.component';
 import { TextInputComponent } from './components/controls/text-input/text-input.component';
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.com
     ControlComponent,
   ],
   imports: [BrowserModule, ReactiveFormsModule, HttpClientModule],
-  providers: [],
+  providers: [
+    { provide: APP_BASE_HREF, useValue: '/DynamicFormsInAngular/' } 
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
